@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec ts-node index.ts",
+    "start": "nodemon --exec ts-node -r tsconfig-paths/register index.ts",
+
     "type-check": "tsc",
     "clean": "rm -rf .next"
   },
